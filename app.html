@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"></script> 
+  <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/a4fb45f57c.js"></script>
+</head>
+<body>
+  <nav class="nav-bar">
+    <img class="img-size" src="./images/1.png" />
+    <div class="large-devices-container">
+        <div class="link-container">
+            <p class="link-text">Features</p>
+            <p class="link-text">About Us</p>
+            <p class="link-text">Contacts</p>
+        </div>
+    </div>
+    <i class="fas fa-bars hamburger" id="hamburgerFont"></i>
+  </nav>
+  <div class="dropdown" id="dropdownContainer">
+    <div class="dropdown-container">
+        <hr class="line" />
+        <a href="#" class="link-text">Features</a>
+        <hr class="line" />
+        <a class="link-text" href="#">About</a>
+        <hr class="line" />
+        <a class="link-text" href="#">Contacts</a>
+        <hr class="line" />
+    </div>
+</div>
+  <div class="container">
+    <div class="widgets-container">
+      <div>
+        <div class="widget-container">
+          <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+          <h5 class="widget-head">7854</h5>   
+        </div>
+        <p class="widget-text">Daily Visits</p>
+      </div>
+      <div>
+        <div class="widget-container">       
+          <i class="fa fa-battery-three-quarters fa-2x" aria-hidden="true"></i>
+          <h5 class="widget-head">75%</h5>
+        </div>
+        <p class="widget-text">Battery Percent</p>
+      </div>
+      <div>
+        <div class="widget-container">
+          <i class="fa fa-thermometer-three-quarters fa-2x" aria-hidden="true"></i>
+          <h5 class="widget-head">29°C</h5>
+        </div> 
+        <p class="widget-text">Temperature</p>
+      </div>
+      <div>
+        <div class="widget-container">
+          <i class="fa fa-cc-mastercard fa-3x widget-icon" aria-hidden="true"></i>  
+        </div>
+        <p class="widget-text">Payments</p>
+      </div>
+    </div>
+    <div class="container-two">
+      <div>
+        <div class="chart-container">
+          <h5 class="chart-title">Temperature Chart</h5>
+          <hr class="hr-rule"/>
+          <canvas id="myChart" class="chart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h5 class="chart-title">Pressure Chart</h5>
+          <hr class="hr-rule"/>
+          <canvas id="myChartTwo"></canvas>
+        </div> 
+      </div>
+      <div>
+        <div class="chart-container">
+          <h5 class="chart-title">Leak Hole Dia Chart</h5>
+          <hr class="hr-rule"/>
+          <canvas id="myChartThree"></canvas>
+        </div>
+        <div class="chart-container">
+          <h5 class="chart-title">Surface Corrosion Chart</h5>
+          <hr class="hr-rule"/>
+          <canvas id="myChartFour"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-chart-container">
+      <div class="bottom-chart">
+        <h5 class="chart-title-2">Total Chart Data</h5>
+      <hr class="hr-rule"/>
+        <canvas id="bottomChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script> 
+</body>
+</html>
